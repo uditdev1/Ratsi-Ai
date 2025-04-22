@@ -1,0 +1,63 @@
+useGSAP(() => {
+    const tl = gsap.timeline({ delay : 3, repeat: -1, yoyo: true, ease: "power1.inOut" });
+    {
+      tl
+      .to(head.current?.rotation, {
+        x : 0.4,
+        duration: 1
+      })
+      .to(head.current?.rotation, {
+        z: 0.3, 
+        duration: 1.5
+      })
+      .to(head.current?.rotation, {
+          z : -0.019,
+          x: 0, 
+          duration: 1
+      })
+      .to(head.current?.rotation, {
+          y: -0.3, 
+          duration: 1.5
+      })
+      .to(head.current?.rotation, {
+        x: 0.3, 
+        duration: 1.5
+      })
+      .to(head.current?.rotation, {
+        y: 0.3, 
+        duration: 1.5
+      })
+    ;
+    }
+    const tl2 = gsap.timeline({ delay : 2, repeat: 4, yoyo: true, ease: "power1.inOut" });
+    {
+      tl2
+      .to(hand_left.current?.rotation, {
+        x : 0.4,
+        duration: 1
+      })
+      .to(hand_left.current?.rotation, {
+        z: 0.35, 
+        duration: 1.8
+      })
+      .to(hand_left.current?.rotation, {
+          z : -0.019,
+          x: 0, 
+          duration: 1
+      })
+      .to(hand_left.current?.rotation, {
+          y: -0.3, 
+          duration: 1.5
+      })
+      .to(hand_left.current?.rotation, {
+        x: 0.3, 
+        duration: 1.5
+      })
+      .to(hand_left.current?.rotation, {
+        y: 0.3, 
+        duration: 1.5
+      })
+    ;
+    }
+    
+  })
